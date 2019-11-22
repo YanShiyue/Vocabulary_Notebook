@@ -21,9 +21,9 @@
             android:hint="输入查询单词"/>
         <fragment
             android:id="@+id/word_fragment"
-            android:name="com.example.vocabulary_notebook.WordFragment"
+            android:name="com.example.vocabulary_notebook.Fragment.WordFragment"
             android:layout_width="match_parent"
-            android:layout_weight="7"
+            android:layout_weight="5"
             android:layout_height="0dp"/>
     </LinearLayout>
     <FrameLayout
@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
         <fragment
             android:id="@+id/mean_fragment"
-            android:name="com.example.vocabulary_notebook.MeanFragment"
+            android:name="com.example.vocabulary_notebook.Fragment.MeanFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </FrameLayout>

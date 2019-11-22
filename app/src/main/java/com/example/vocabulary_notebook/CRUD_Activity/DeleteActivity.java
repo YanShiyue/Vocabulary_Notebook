@@ -1,4 +1,4 @@
-package com.example.vocabulary_notebook;
+package com.example.vocabulary_notebook.CRUD_Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.vocabulary_notebook.MainActivity;
+import com.example.vocabulary_notebook.MyDatabaseHelper;
+import com.example.vocabulary_notebook.R;
 
 public class DeleteActivity extends AppCompatActivity {
 
@@ -73,7 +76,7 @@ public class DeleteActivity extends AppCompatActivity {
                 dbHelper.close();
 
                 //返回MainActivity并清空活动栈
-                Intent intent=new Intent(DeleteActivity.this,MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent=new Intent(DeleteActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

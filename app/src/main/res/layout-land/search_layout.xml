@@ -4,19 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SearchActivity">
+    tools:context=".CRUD_Activity.SearchActivity">
     <EditText
         android:id="@+id/search_ques"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="30sp"
-        android:maxLines="1"/>
+        android:maxLines="1"
+        android:imeOptions="flagNoExtractUi"/>
     <EditText
         android:id="@+id/search_ans"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
+        android:layout_weight="5"
         android:gravity="top|center"
         android:focusable="false"
         android:focusableInTouchMode="false"/>

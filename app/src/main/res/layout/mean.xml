@@ -5,6 +5,6 @@
     <fragment
         android:id="@+id/mean_fragment"
         android:layout_width="match_parent"
-        android:name="com.example.vocabulary_notebook.MeanFragment"
+        android:name="com.example.vocabulary_notebook.Fragment.MeanFragment"
         android:layout_height="match_parent"/>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.vocabulary_notebook;
+package com.example.vocabulary_notebook.CRUD_Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.EditText;
+
+import com.example.vocabulary_notebook.MyDatabaseHelper;
+import com.example.vocabulary_notebook.R;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -26,19 +29,25 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                /*EditText ques=(EditText)findViewById(R.id.search_ques);
+                EditText ans=(EditText)findViewById(R.id.search_ans);
                 //Log.d("word", s+"");
                 MyDatabaseHelper dbHelper = new MyDatabaseHelper(SearchActivity.this, "words.db", null, 1);
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                Cursor cursor = db.query("words",new String[]{"word","mean"},"? like ?",new String[]{"word","''+%s%+''"},null,null,null);
+                Cursor cursor =db.rawQuery("select word,mean from words where word like ?",new String[]{"%"+s+"%"});
+                ans.setText("");
                 if(cursor.moveToFirst()){
                     do{
-                        String _word=cursor.getString(cursor.getColumnIndex("word"));
+                        String word=cursor.getString(cursor.getColumnIndex("word"));
+                        String mean=cursor.getString(cursor.getColumnIndex("mean"));
+                        /*Log.d("MainActivity","words word is "+word);
+                        Log.d("MainActivity","words mean is "+mean);*/
+                        ans.append(word+"  "+mean+"\n");
                     }while(cursor.moveToNext());
                 }
                 cursor.close();
                 db.close();
-                dbHelper.close();*/
+                dbHelper.close();
+                //Log.d("MainActivity","words mean is "+before+" "+count+" ");
             }
 
             @Override
