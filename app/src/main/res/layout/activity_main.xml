@@ -8,14 +8,6 @@
     android:focusableInTouchMode="true"
     tools:context=".MainActivity">
     <!-- android:name显式指明需要添加的碎片类名-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:text="单词本" />
     <EditText
         android:id="@+id/search"
         android:layout_width="match_parent"

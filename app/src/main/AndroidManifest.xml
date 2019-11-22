@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CRUD_Activity.SearchActivity"></activity>
+        <provider
+            android:name=".Content_Provider.MyProvider"
+            android:authorities="com.example.Vocabulary_Notebook.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <activity android:name=".CRUD_Activity.SearchActivity" />
         <activity android:name=".CRUD_Activity.DeleteActivity" />
         <activity android:name=".CRUD_Activity.AddActivity" />
         <activity android:name=".CRUD_Activity.ChangeActivity" />

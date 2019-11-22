@@ -1,4 +1,4 @@
-package com.example.vocabulary_notebook.Content_Resolver;
+package com.example.vocabulary_notebook.ContentResolver;
 
 
 public class YoudaoTranslate {/*

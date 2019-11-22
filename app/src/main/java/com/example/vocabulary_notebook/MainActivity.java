@@ -15,6 +15,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -247,3 +248,57 @@ public class MainActivity extends AppCompatActivity {
         return Word;
     }
 }
+/*//添加单词
+        db=dbHelper.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        values.put("word","android");//组装第一条数据
+        values.put("mean","机器人");
+        values.put("ep","Actually,I like being an android.");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","course");//组装第二条数据
+        values.put("mean","课程");
+        values.put("ep","So,at any rate,this seemed to me to be,when I started teaching this course,reasons not to teach it.");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","computer");
+        values.put("mean","计算机");
+        values.put("ep","She specializes in computer science.");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","software");
+        values.put("mean","软件");
+        values.put("ep","My parents thought I'd lost my mind to drop out of Stanford Business School to go join some company that made software.");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","internet");
+        values.put("mean","网络");
+        values.put("ep","Let's begin with the internet people. The internet people wanted convergence with the telephone and later television networks, because they wanted ubiquitous.");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","router");
+        values.put("mean","路由器");
+        values.put("ep","Plug it into your router. ");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","gateway");
+        values.put("mean","网关");
+        values.put("ep","As there is only one default transmission queue per MQ server, only one gateway queue manager can work with it. ");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","process");
+        values.put("mean","进程");
+        values.put("ep","We accept that what will be is not yet determined, and thatwe can steer the course of events in one direction or another. ");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","thread");
+        values.put("mean","线程");
+        values.put("ep","This wakes up any of the threads blocked on the semaphore. ");
+        db.insert("words",null,values);
+        values.clear();
+        values.put("word","concurrence");
+        values.put("mean","并发");
+        values.put("ep","This uses only one lock and keeps others from interfering with the updates, but it does reduce concurrency of the data to other users.");
+        db.insert("words",null,values);
+        values.clear();
+        db.close();*/
